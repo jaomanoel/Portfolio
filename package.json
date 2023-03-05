@@ -1,0 +1,40 @@
+{
+    "name": "newtemplate",
+    "private": true,
+    "version": "0.0.0",
+    "type": "module",
+    "scripts": {
+        "start": "vite",
+        "build": "vite build",
+        "preview": "vite preview",
+        "storybook": "start-storybook -p 6006",
+        "build-storybook": "build-storybook",
+        "plop": "plop",
+        "lint": "eslint \"src/**/*.{js,jsx,ts,tsx}\"",
+        "lint:fix": "eslint \"src/**/*.{js,jsx,ts,tsx}\" --fix"
+    },
+    "dependencies": {
+        "eslint": "^8.35.0",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.21.0",
+        "@storybook/addon-actions": "^6.5.16",
+        "@storybook/addon-essentials": "^6.5.16",
+        "@storybook/addon-interactions": "^6.5.16",
+        "@storybook/addon-links": "^6.5.16",
+        "@storybook/builder-vite": "^0.4.2",
+        "@storybook/react": "^6.5.16",
+        "@storybook/testing-library": "^0.0.13",
+        "@types/react": "^18.0.26",
+        "@types/react-dom": "^18.0.9",
+        "@vitejs/plugin-react": "^3.0.0",
+        "autoprefixer": "^10.4.13",
+        "babel-loader": "^8.3.0",
+        "postcss": "^8.4.20",
+        "prettier": "^2.8.4",
+        "tailwindcss": "^3.2.4",
+        "vite": "^4.0.0"
+    }
+}

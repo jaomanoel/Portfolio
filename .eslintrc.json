@@ -1,0 +1,12 @@
+{
+    "rules": {
+        "prettier/prettier": [
+            "error",
+            {
+                "endOfLine": "crlf"
+            }
+        ]
+    },
+    "extends": ["prettier"],
+    "plugins": ["prettier"]
+}

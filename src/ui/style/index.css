@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-shadow: none;
+    text-decoration: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+@layer components {
+    /*                                                    DEFAULT                                                       */
+
+    .container-view {
+        @apply w-full overflow-hidden flex justify-center items-center;
+    }
+
+    .centralizador-col-between {
+        @apply flex flex-col items-start max-w-1280 md:w-full gap-30 justify-between;
+    }
+
+    .centralizador-col-center {
+        @apply flex flex-col items-start max-w-1280 md:w-full justify-center gap-30;
+    }
+
+    .centralizador-row-between {
+        @apply flex items-start max-w-1280 md:w-full gap-30 justify-between;
+    }
+
+    .centralizador-row-center {
+        @apply flex items-start max-w-1280 md:w-full justify-center gap-30;
+    }
+
+    .content {
+        @apply flex flex-col w-full gap-30 md:w-400 lg:w-650;
+    }
+}
