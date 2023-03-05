@@ -40,17 +40,17 @@ export default function (plop) {
             const actions = [
                 {
                     type: "add",
-                    path: `${basePath}/${data.name}.tsx`,
+                    path: `${basePath}/${data.name}.jsx`,
                     templateFile: "plop/component/component-template.hbs",
                 },
                 {
                     type: "add",
-                    path: `${basePath}/${data.name}.stories.tsx`,
+                    path: `${basePath}/${data.name}.stories.jsx`,
                     templateFile: "plop/component/component-story-template.hbs",
                 },
                 {
                     type: "add",
-                    path: `${basePath}/${data.name}.test.tsx`,
+                    path: `${basePath}/${data.name}.test.jsx`,
                     templateFile: "plop/component/component-test-template.hbs",
                 },
             ];
@@ -59,3 +59,4 @@ export default function (plop) {
         },
     });
 }
+
