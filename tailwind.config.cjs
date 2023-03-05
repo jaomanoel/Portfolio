@@ -20,8 +20,10 @@ module.exports = {
         extend: {
             spacing: {
                 "2px": ".2rem",
+                16: "1.6rem",
                 20: "2rem",
                 24: "2.4rem",
+                28: "2.8rem",
                 30: "3rem",
                 36: "3.6rem",
                 48: "4.8rem",
@@ -67,6 +69,7 @@ module.exports = {
                 "bg-dark-03": "#191A21",
                 "bg-nav-pilula": "#24252D",
                 "bg-nav-bg": "#1D1E25",
+                "bg-tabbar": "#343746",
             },
         },
     },
