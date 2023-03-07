@@ -19,14 +19,17 @@ module.exports = {
         },
         extend: {
             spacing: {
+                2: ".2rem",
                 4: ".4rem",
-                "2px": ".2rem",
                 8: ".8rem",
                 10: "1rem",
                 13: "1.3rem",
+                14: "1.4rem",
                 16: "1.6rem",
+                18: "1.8rem",
                 20: "2rem",
                 24: "2.4rem",
+                25: "2.5rem",
                 28: "2.8rem",
                 30: "3rem",
                 36: "3.6rem",
@@ -74,11 +77,13 @@ module.exports = {
                 "bg-nav-pilula": "#24252D",
                 "bg-nav-bg": "#1D1E25",
                 "bg-tabbar": "#343746",
+                "bg-explorer": "#21222C",
                 "text-primary": "#6272A4",
+                "bg-divider": "#444444",
             },
             gridTemplateColumns: {
                 // Complex site-specific row configuration
-                layout: "74px 340px 1505px",
+                layout: "74px 340px 1fr",
             },
         },
     },

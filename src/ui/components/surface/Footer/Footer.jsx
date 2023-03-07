@@ -8,7 +8,7 @@ import Bell from "../../../../assets/icons/footer/bell.svg";
 
 const Footer = () => {
     return (
-        <footer className="w-full flex justify-between items-center px-16 py-[.6rem] bg-bg-dark-03">
+        <footer className="w-full flex justify-between items-center px-25 py-[.6rem] bg-bg-dark-03">
             <div className="flex items-center gap-4 text-white text-sm">
                 <img src={Close} alt="close" />
                 <span>0</span>
