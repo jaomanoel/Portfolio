@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://fonts.googleapis.com/css2?family=Saira:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Saira:wght@400;500;700&display=swap");
 
 * {
     margin: 0;
@@ -28,22 +28,26 @@ html {
     }
 
     .centralizador-col-between {
-        @apply flex flex-col items-start max-w-1280 md:w-full gap-30 justify-between;
+        @apply flex flex-col items-start max-w-screen-xl md:w-full gap-30 justify-between;
     }
 
     .centralizador-col-center {
-        @apply flex flex-col items-start max-w-1280 md:w-full justify-center gap-30;
+        @apply flex flex-col items-start max-w-screen-xl md:w-full justify-center gap-30;
     }
 
     .centralizador-row-between {
-        @apply flex items-start max-w-1280 md:w-full gap-30 justify-between;
+        @apply flex items-start max-w-screen-xl md:w-full gap-30 justify-between;
     }
 
-    .centralizador-row-center {
-        @apply flex items-start max-w-1280 md:w-full justify-center gap-30;
+    .centralizador-row-start {
+        @apply flex items-start max-w-screen-xl md:w-full justify-start gap-30;
     }
 
     .content {
         @apply flex flex-col w-full gap-30 md:w-400 lg:w-650;
+    }
+
+    .nav-a {
+        @apply flex items-center justify-center px-12 py-8 bg-bg-nav-pilula border-y-0 border-l-[1px] border-r-0 font-normal border-solid border-black gap-12;
     }
 }

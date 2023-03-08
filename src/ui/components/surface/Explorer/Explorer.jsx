@@ -76,8 +76,7 @@ const Explorer = () => {
             <div className="flex flex-col items-start gap-16">
                 <div className="flex flex-col gap-16">
                     {folders.map((item, index) => (
-                        <a
-                            href="#"
+                        <button
                             onClick={() =>
                                 handleClick(folders, index, "folders")
                             }
@@ -101,7 +100,7 @@ const Explorer = () => {
                             <p className="text-white text-sm tracking-wider">
                                 {item.name}
                             </p>
-                        </a>
+                        </button>
                     ))}
                 </div>
 
@@ -114,9 +113,8 @@ const Explorer = () => {
 
                                     <div className="flex flex-col gap-16">
                                         {files.map((item, index) => (
-                                            <a
+                                            <button
                                                 key={index}
-                                                href="#"
                                                 onClick={() =>
                                                     handleClick(
                                                         files,
@@ -128,8 +126,10 @@ const Explorer = () => {
                                             >
                                                 {item.isArrow ? (
                                                     <img
-                                                        className={`w-14 h-14 rotate-${
-                                                            item.arrow ? 90 : 0
+                                                        className={`w-14 h-14 ${
+                                                            item.arrow
+                                                                ? "rotate-90"
+                                                                : "rotate-0"
                                                         }`}
                                                         src={Arrow}
                                                         alt="arrow"
@@ -147,7 +147,7 @@ const Explorer = () => {
                                                         {item.name}
                                                     </p>
                                                 </div>
-                                            </a>
+                                            </button>
                                         ))}
                                     </div>
                                 </div>
@@ -158,8 +158,8 @@ const Explorer = () => {
 
                 <div className="flex flex-col gap-16 items-baseline pl-20 w-full">
                     {filesHome.map((item, index) => (
-                        <a
-                            href="#"
+                        <button
+                            key={index}
                             className="flex gap-8 items-center justify-end"
                         >
                             <img
@@ -170,7 +170,7 @@ const Explorer = () => {
                             <p className="text-white text-sm tracking-wider">
                                 {item.name}
                             </p>
-                        </a>
+                        </button>
                     ))}
                 </div>
             </div>
