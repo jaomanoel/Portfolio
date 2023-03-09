@@ -13,6 +13,7 @@
 }
 
 body {
+    overflow: hidden;
     font-family: "Saira", sans-serif;
 }
 
@@ -24,27 +25,27 @@ html {
     /*                                                    DEFAULT                                                       */
 
     .container-view {
-        @apply w-full overflow-hidden flex justify-center items-center;
+        @apply overflow-hidden flex justify-center items-center;
     }
 
     .centralizador-col-between {
-        @apply flex flex-col items-start max-w-screen-xl md:w-full gap-30 justify-between;
+        @apply flex flex-col items-start max-w-screen-xl w-full h-full mx-16 md:px-0 md:w-full gap-30 justify-between;
     }
 
     .centralizador-col-center {
-        @apply flex flex-col items-start max-w-screen-xl md:w-full justify-center gap-30;
+        @apply flex flex-col items-center max-w-screen-xl w-full h-full mx-16 md:px-0 md:w-full justify-center gap-30;
     }
 
     .centralizador-row-between {
-        @apply flex items-start max-w-screen-xl md:w-full gap-30 justify-between;
+        @apply flex flex-row-reverse items-start max-w-screen-xl w-full px-16 md:px-0 gap-30 justify-between;
     }
 
     .centralizador-row-start {
         @apply flex items-start max-w-screen-xl md:w-full justify-start gap-30;
     }
 
-    .content {
-        @apply flex flex-col w-full gap-30 md:w-400 lg:w-650;
+    .content-img-home {
+        @apply w-full h-full bg-[#4D4D4D] absolute left-0 bottom-0 z-0 md:relative md:w-[633px] md:h-[422px] md:flex md:flex-col md:gap-20;
     }
 
     .nav-a {

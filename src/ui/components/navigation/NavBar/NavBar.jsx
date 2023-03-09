@@ -43,7 +43,7 @@ const NavBar = () => {
                                 src={item.icon}
                                 alt={item.name}
                             />
-                            <p className="text-sm md:text-base text-white font-bold leading-8">
+                            <p className="text-sm md:text-base text-white leading-8">
                                 {item.name}
                             </p>
                         </Link>
