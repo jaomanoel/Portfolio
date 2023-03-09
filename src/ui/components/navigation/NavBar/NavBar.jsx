@@ -25,8 +25,8 @@ const NavBar = () => {
 
     return (
         <>
-            <div className="container-view">
-                <div className="centralizador-row-start max-w-full gap-0">
+            <div className="container-view bg-bg-nav-bg">
+                <div className="centralizador-row-start gap-0">
                     {nav.map((item, index) => (
                         <Link
                             key={index}
