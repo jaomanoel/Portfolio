@@ -6,7 +6,7 @@ import TextField from "../../ui/components/surface/TextField/TextField";
 function Home() {
     return (
         <div className="container-view bg-bg py-40 md:py-90 h-full relative mx-16 mt-8 overflow-hidden">
-            <div className="centralizador-col-center md:centralizador-row-between justify-end md:justify-between">
+            <div className="centralizador-col-center md:flex-row-reverse md:centralizador-row-between justify-end md:justify-between">
                 <div className="content-img-home">
                     <div className="md:hidden w-full h-full absolute bg-gradient-to-b from-transparent to-black"></div>
                     <img
