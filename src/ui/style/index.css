@@ -13,7 +13,7 @@
 }
 
 body {
-    overflow: hidden;
+    overflow-x: hidden;
     font-family: "Saira", sans-serif;
 }
 
@@ -25,7 +25,7 @@ html {
     /*                                                    DEFAULT                                                       */
 
     .container-view {
-        @apply overflow-hidden flex justify-center items-center;
+        @apply overflow-x-hidden flex justify-center items-center;
     }
 
     .centralizador-col-between {
@@ -50,5 +50,23 @@ html {
 
     .nav-a {
         @apply flex items-center justify-center px-12 py-8 bg-bg-nav-pilula border-y-0 border-l-[1px] border-r-0 font-normal border-solid border-black gap-12;
+    }
+}
+
+@media screen and (min-height: 960px) {
+    .responsive-textfield {
+        font-size: 9rem;
+    }
+}
+
+@media screen and (max-height: 960px) {
+    .responsive-textfield {
+        font-size: 8rem;
+    }
+}
+
+@media screen and (max-height: 870px) {
+    .responsive-textfield {
+        font-size: 6rem;
     }
 }

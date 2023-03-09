@@ -2,7 +2,9 @@ import React from "react";
 
 const TextField = ({ Text }) => {
     return (
-        <h2 className="font-bold text-9xl text-neutral-textfield leading-10 uppercase">
+        <h2
+            className={`responsive-textfield font-bold text-neutral-textfield leading-none uppercase`}
+        >
             {Text}
         </h2>
     );
