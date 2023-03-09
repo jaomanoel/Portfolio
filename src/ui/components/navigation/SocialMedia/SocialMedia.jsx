@@ -13,7 +13,7 @@ const SocialMedia = () => {
                 target={"_blank"}
             >
                 <img
-                    className="w-8 h-8 md:w-24 md:h-24"
+                    className="w-16 h-16 md:w-24 md:h-24"
                     src={Github}
                     alt="Github"
                 />
@@ -25,7 +25,7 @@ const SocialMedia = () => {
                 target={"_blank"}
             >
                 <img
-                    className="w-8 h-8 md:w-24 md:h-24"
+                    className="w-16 h-16 md:w-24 md:h-24"
                     src={Linkedin}
                     alt="Linkedin"
                 />
@@ -37,7 +37,7 @@ const SocialMedia = () => {
                 target={"_blank"}
             >
                 <img
-                    className="w-8 h-8 md:w-24 md:h-24"
+                    className="w-16 h-16 md:w-24 md:h-24"
                     src={Instagram}
                     alt="Instagram"
                 />
