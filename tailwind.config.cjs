@@ -15,7 +15,7 @@ module.exports = {
             "6xl": "6rem", // 60px
             "7xl": "6.4rem", // 64px
             "8xl": "9.6rem", // 96px
-            "9xl": "12.8rem", // 128px
+            "9xl": "10rem", // 100px
         },
         extend: {
             spacing: {
@@ -75,6 +75,7 @@ module.exports = {
                 bg: "#282A36",
                 neutral: "rgba(255,255,255,0.5)",
                 blue: "#3485FF",
+                "neutral-textfield": "rgba(255,255,255, 0.2)",
                 "bg-dark-01": "#2C2D37",
                 "bg-dark-02": "#2A2C40",
                 "bg-dark-03": "#191A21",
