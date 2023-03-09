@@ -54,7 +54,7 @@ function About() {
                     </div>
                 </div>
 
-                <div className="hidden w-2/4 md:flex items-center justify-center h-full -rotate-90 ">
+                <div className="hidden w-2/4 md:flex items-end justify-center h-full -rotate-90 ">
                     <TextField Text={"Desenvolvedor front-end"} />
                 </div>
             </div>
