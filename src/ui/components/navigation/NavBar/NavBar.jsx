@@ -25,7 +25,7 @@ const NavBar = () => {
 
     return (
         <>
-            <div className="container-view bg-bg-nav-bg">
+            <div className="container-view overflow-hidden bg-bg-nav-bg">
                 <div className="centralizador-row-start gap-0">
                     {nav.map((item, index) => (
                         <Link
