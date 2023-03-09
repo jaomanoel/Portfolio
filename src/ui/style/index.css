@@ -37,7 +37,7 @@ html {
     }
 
     .centralizador-row-between {
-        @apply flex flex-row-reverse items-start max-w-screen-xl w-full px-16 md:px-0 gap-30 justify-between;
+        @apply flex flex-row items-start max-w-screen-xl w-full px-16 md:px-0 gap-30 justify-between;
     }
 
     .centralizador-row-start {
@@ -68,5 +68,11 @@ html {
 @media screen and (max-height: 870px) {
     .responsive-textfield {
         font-size: 6rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .responsive-textfield {
+        font-size: 4rem;
     }
 }

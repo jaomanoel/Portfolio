@@ -20,7 +20,7 @@ export function useNav() {
             isSelected: false,
         },
         {
-            path: "/contato",
+            path: "/contact",
             name: "contato.css",
             icon: Css,
             isSelected: false,
