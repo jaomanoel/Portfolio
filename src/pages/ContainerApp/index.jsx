@@ -11,7 +11,7 @@ function ContainerApp() {
         <div>
             <div className="flex flex-col justify-between h-[100vh] bg-bg">
                 <Header />
-                <div className="flex  h-full">
+                <div className="flex h-full">
                     <div className="w-74 hidden tablet:block">
                         <TabBar />
                     </div>

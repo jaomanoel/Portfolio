@@ -13,7 +13,7 @@
 }
 
 body {
-    overflow-x: hidden;
+    overflow: hidden;
     font-family: "Saira", sans-serif;
 }
 
@@ -51,6 +51,10 @@ html {
     .nav-a {
         @apply flex items-center justify-center px-12 py-8 bg-bg-nav-pilula border-y-0 border-l-[1px] border-r-0 font-normal border-solid border-black gap-12;
     }
+}
+
+.container-view::-webkit-scrollbar {
+    visibility: hidden;
 }
 
 @media screen and (min-height: 960px) {
