@@ -2,6 +2,9 @@
 module.exports = {
     content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
     theme: {
+        fontFamily: {
+            saira: ["Saira", "sans-serif"],
+        },
         fontSize: {
             xs: "1.2rem", // 12px
             sm: "1.4rem", // 14px
@@ -35,6 +38,7 @@ module.exports = {
                 30: "3rem",
                 32: "3.2rem",
                 36: "3.6rem",
+                38: "3.8rem",
                 40: "4rem",
                 48: "4.8rem",
                 60: "6rem",
@@ -46,12 +50,14 @@ module.exports = {
                 240: "24rem",
                 250: "25rem",
                 280: "28rem",
+                288: "28.8rem",
                 293: "29.3rem",
                 300: "30rem",
                 350: "35rem",
                 400: "40rem",
                 408: "40.8rem",
                 410: "41rem",
+                413: "41.3rem",
                 450: "45rem",
                 500: "50rem",
                 600: "60rem",
