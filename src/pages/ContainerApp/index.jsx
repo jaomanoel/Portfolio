@@ -11,16 +11,16 @@ function ContainerApp() {
         <div>
             <div className="flex flex-col justify-between h-[100vh] bg-bg">
                 <Header />
-                <div className="grid grid-cols-1 grid-rows-1 md:grid-rows-1 md:grid-cols-layout h-full">
-                    <div className="hidden md:block">
+                <div className="flex  h-full">
+                    <div className="w-74 hidden tablet:block">
                         <TabBar />
                     </div>
 
-                    <div className="hidden lg:block">
+                    <div className="w-[340px] hidden laptop:block">
                         <Explorer />
                     </div>
 
-                    <div className="flex flex-col">
+                    <div className="flex w-full flex-col">
                         <NavBar />
                     </div>
                 </div>

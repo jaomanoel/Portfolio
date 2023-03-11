@@ -1,7 +1,15 @@
 /** @type {import("tailwindcss").Config} */
+
+const defaultTheme = require("tailwindcss/defaultTheme");
+
 module.exports = {
     content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
     theme: {
+        screens: {
+            tablet: "1100px",
+            laptop: "1345px",
+            ...defaultTheme.screens,
+        },
         fontFamily: {
             saira: ["Saira", "sans-serif"],
         },
@@ -42,6 +50,7 @@ module.exports = {
                 40: "4rem",
                 48: "4.8rem",
                 60: "6rem",
+                74: "7.4rem",
                 90: "9rem",
                 100: "10rem",
                 120: "12rem",
@@ -53,6 +62,7 @@ module.exports = {
                 288: "28.8rem",
                 293: "29.3rem",
                 300: "30rem",
+                340: "30.4rem",
                 350: "35rem",
                 400: "40rem",
                 408: "40.8rem",
@@ -95,6 +105,7 @@ module.exports = {
             gridTemplateColumns: {
                 // Complex site-specific row configuration
                 layout: "74px 340px 1fr",
+                teste: "repeat(auto-fit, minmax(0, 1fr))",
             },
         },
     },

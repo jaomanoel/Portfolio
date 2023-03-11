@@ -10,7 +10,7 @@ import Config from "../../../../assets/icons/tabbar/config.svg";
 
 const TabBar = () => {
     return (
-        <div className="h-full hidden items-center flex-col justify-between p-16 bg-bg-tabbar md:flex">
+        <div className="w-74 h-full hidden items-center flex-col justify-between p-16 bg-bg-tabbar md:flex">
             <div className="flex flex-col gap-28">
                 <img src={File} alt="file" />
                 <img src={Search} alt="search" />
