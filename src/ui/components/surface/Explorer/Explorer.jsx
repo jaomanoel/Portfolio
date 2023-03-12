@@ -10,7 +10,7 @@ import Collapse from "../../../../assets/icons/explorer/collapse.svg";
 import Menu from "../../../../assets/icons/explorer/menu.svg";
 import Arrow from "../../../../assets/icons/explorer/arrow.svg";
 
-const Explorer = () => {
+const Explorer = ({ state }) => {
     const [folders, setFolders] = useState(useFolder());
     const [files, setFiles] = useState(useFile());
     const [filesHome, setFilesHome] = useState(useFileHome());
@@ -34,7 +34,11 @@ const Explorer = () => {
     };
 
     return (
-        <div className="flex px-20 py-24 flex-col w-full gap-16 bg-bg-explorer h-full">
+        <div
+            className={`flex px-20 py-24 flex-col w-full gap-16 bg-bg-explorer h-full ${
+                state ? "hidden" : "block"
+            }`}
+        >
             <div className="flex items-center gap-24">
                 <p className="text-[1rem] text-white">EXPLORER: MYPORTFOLIO</p>
 
