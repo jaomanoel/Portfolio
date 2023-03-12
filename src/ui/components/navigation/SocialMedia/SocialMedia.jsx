@@ -9,7 +9,7 @@ const SocialMedia = () => {
         <div className="flex items-center gap-8">
             <a
                 className="p-[1.2rem] hover:bg-blue transition-all bg-bg-dark-03 rounded-[.3rem]"
-                href="#"
+                href="https://github.com/jaomanoel"
                 target={"_blank"}
             >
                 <img
@@ -21,7 +21,7 @@ const SocialMedia = () => {
 
             <a
                 className="p-[1.2rem] hover:bg-blue transition-all bg-bg-dark-03 rounded-[.3rem]"
-                href="#"
+                href="https://www.linkedin.com/in/jaomanoel/"
                 target={"_blank"}
             >
                 <img
@@ -33,7 +33,7 @@ const SocialMedia = () => {
 
             <a
                 className="p-[1.2rem] hover:bg-blue transition-all bg-bg-dark-03 rounded-[.3rem]"
-                href="#"
+                href="https://www.instagram.com/jao_vieiraaa/"
                 target={"_blank"}
             >
                 <img
