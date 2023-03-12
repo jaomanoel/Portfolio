@@ -10,30 +10,34 @@ import Config from "../../../../assets/icons/tabbar/config.svg";
 
 const TabBar = ({ func }) => {
     return (
-        <div className="w-74 h-full hidden items-center flex-col justify-between p-16 bg-bg-tabbar md:flex">
+        <div className="w-60 h-full hidden items-center flex-col justify-between p-16 bg-bg-tabbar md:flex">
             <div className="flex flex-col gap-28">
                 <button onClick={func}>
-                    <img src={File} alt="file" />
+                    <img className="w-30 h-30" src={File} alt="file" />
                 </button>
                 <a href="#">
-                    <img src={Search} alt="search" />
+                    <img className="w-30 h-30" src={Search} alt="search" />
                 </a>
                 <a href="#">
-                    <img src={Git} alt="git" />
+                    <img className="w-30 h-30" src={Git} alt="git" />
                 </a>
                 <a href="#">
-                    <img src={Debug} alt="debug" />
+                    <img className="w-30 h-30" src={Debug} alt="debug" />
                 </a>
                 <a href="#">
-                    <img src={Extension} alt="extension" />
+                    <img
+                        className="w-30 h-30"
+                        src={Extension}
+                        alt="extension"
+                    />
                 </a>
             </div>
             <div className="flex flex-col gap-28">
                 <a href="#">
-                    <img src={User} alt="user" />
+                    <img className="w-30 h-30" src={User} alt="user" />
                 </a>
                 <a href="#">
-                    <img src={Config} alt="config" />
+                    <img className="w-30 h-30" src={Config} alt="config" />
                 </a>
             </div>
         </div>
