@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import Header from "../../ui/components/surface/Header/Header";
 import Explorer from "../../ui/components/surface/Explorer/Explorer";
@@ -6,9 +6,29 @@ import TabBar from "../../ui/components/surface/TabBar/TabBar";
 import Footer from "../../ui/components/surface/Footer/Footer";
 import NavBar from "../../ui/components/navigation/NavBar/NavBar";
 import { useExplorer } from "../../data/hooks/useExplorer";
+import { useNav } from "../../data/hooks/useNav";
+import { useLocation } from "react-router-dom";
 
 function ContainerApp() {
     const explorer = useExplorer();
+    const nav = useNav();
+    const location = useLocation();
+
+    useEffect(() => {
+        const newNav = [...nav.getNav()];
+
+        console.log(location.pathname);
+
+        newNav.map((item) => {
+            if (item.path == location.pathname && item.isSelected === false) {
+                item.isSelected = true;
+            } else {
+                item.isSelected = false;
+            }
+        });
+
+        nav.setNav(newNav);
+    }, []);
 
     return (
         <div>
@@ -26,7 +46,7 @@ function ContainerApp() {
                     </div>
 
                     <div className="flex w-full flex-col">
-                        <NavBar />
+                        <NavBar getNav={nav.getNav} setNav={nav.setNav} />
                     </div>
                 </div>
                 <Footer />

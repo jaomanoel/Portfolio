@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 import { Link, Outlet } from "react-router-dom";
-import { useNav } from "../../../../data/hooks/useNav";
 
-const NavBar = () => {
-    const [nav, setNav] = useState(useNav());
+const NavBar = ({ getNav, setNav }) => {
+    const nav = getNav();
 
     const handleSelect = (navIndex) => {
         const newNav = [...nav];

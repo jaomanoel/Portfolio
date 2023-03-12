@@ -6,12 +6,12 @@ import Css from "../../assets/icons/files/css.svg";
 import Js from "../../assets/icons/files/js.svg";
 
 export function useNav() {
-    const [nav, setNav] = useState([
+    const [item, setItem] = useState([
         {
             path: "/",
             name: "home.jsx",
             icon: ReactIcon,
-            isSelected: true,
+            isSelected: false,
         },
         {
             path: "/about",
@@ -33,5 +33,17 @@ export function useNav() {
         },
     ]);
 
-    return nav;
+    function setNav(newData) {
+        setItem(newData);
+    }
+
+    function getNav() {
+        return item;
+    }
+
+    return {
+        item,
+        setNav,
+        getNav,
+    };
 }

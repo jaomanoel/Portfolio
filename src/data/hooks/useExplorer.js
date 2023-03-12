@@ -12,7 +12,6 @@ export function useExplorer() {
     }
 
     function toggleExplorer() {
-        console.log(explorer);
         setExplorer(!explorer);
     }
 
