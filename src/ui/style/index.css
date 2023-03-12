@@ -53,7 +53,8 @@ html {
     }
 }
 
-.container-view::-webkit-scrollbar {
+.container-view::-webkit-scrollbar,
+.explorer::-webkit-scrollbar {
     visibility: hidden;
 }
 

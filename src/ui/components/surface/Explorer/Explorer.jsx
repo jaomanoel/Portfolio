@@ -35,11 +35,11 @@ const Explorer = ({ state }) => {
 
     return (
         <div
-            className={`flex px-20 py-24 flex-col w-full gap-16 bg-bg-explorer h-full ${
+            className={`flex px-20 py-24 flex-col w-[340px] h-[88vh] 2xl:h-[92vh] gap-16 bg-bg-explorer ${
                 state ? "hidden" : "block"
             }`}
         >
-            <div className="flex items-center gap-24">
+            <div className="flex  items-center gap-24">
                 <p className="text-[1rem] text-white">EXPLORER: MYPORTFOLIO</p>
 
                 <div className="flex items-center gap-8">
@@ -77,7 +77,7 @@ const Explorer = ({ state }) => {
                 </div>
             </div>
 
-            <div className="flex flex-col items-start gap-16">
+            <div className="flex overflow-auto explorer flex-col items-start gap-16">
                 <div className="flex flex-col gap-16">
                     {folders.map((item, index) => (
                         <button
@@ -97,7 +97,7 @@ const Explorer = ({ state }) => {
 
                             <img
                                 className="w-24 h-24"
-                                src={item.icon}
+                                src={item.arrow ? item.icon_open : item.icon}
                                 alt={item.name}
                             />
 
@@ -142,11 +142,19 @@ const Explorer = ({ state }) => {
                                                     <div className="w-14 h-14"></div>
                                                 )}
                                                 <div className="flex items-center gap-8 w-full">
-                                                    <img
-                                                        className="w-24 h-24"
-                                                        src={item.icon}
-                                                        alt={item.name}
-                                                    />
+                                                    {item.arrow ? (
+                                                        <img
+                                                            className="w-24 h-24"
+                                                            src={item.icon_open}
+                                                            alt={item.name}
+                                                        />
+                                                    ) : (
+                                                        <img
+                                                            className="w-24 h-24"
+                                                            src={item.icon}
+                                                            alt={item.name}
+                                                        />
+                                                    )}
                                                     <p className="text-white text-sm tracking-wider">
                                                         {item.name}
                                                     </p>
