@@ -8,7 +8,7 @@ const SocialMedia = () => {
     return (
         <div className="flex items-center gap-8">
             <a
-                className="p-[1.2rem] bg-bg-dark-03 rounded-[.3rem]"
+                className="p-[1.2rem] hover:bg-blue transition-all bg-bg-dark-03 rounded-[.3rem]"
                 href="#"
                 target={"_blank"}
             >
@@ -20,7 +20,7 @@ const SocialMedia = () => {
             </a>
 
             <a
-                className="p-[1.2rem] bg-bg-dark-03 rounded-[.3rem]"
+                className="p-[1.2rem] hover:bg-blue transition-all bg-bg-dark-03 rounded-[.3rem]"
                 href="#"
                 target={"_blank"}
             >
@@ -32,7 +32,7 @@ const SocialMedia = () => {
             </a>
 
             <a
-                className="p-[1.2rem] bg-bg-dark-03 rounded-[.3rem]"
+                className="p-[1.2rem] hover:bg-blue transition-all bg-bg-dark-03 rounded-[.3rem]"
                 href="#"
                 target={"_blank"}
             >
