@@ -6,7 +6,7 @@ const Contact = () => {
     return (
         <>
             <head>
-                <title>Joao Manoel - Contact</title>
+                <title>Joao Manoel - Contato</title>
             </head>
             <div className="container-view h-full py-30 overflow-x-hidden bg-bg">
                 <div className="centralizador-col-center flex-row gap-32 md:centralizador-row-between">

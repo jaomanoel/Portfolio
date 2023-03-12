@@ -8,7 +8,7 @@ const Projects = () => {
     return (
         <>
             <head>
-                <title>Portfolio - Projects</title>
+                <title>Joao Manoel - Projetos</title>
             </head>
             <div className="container-view px-16 m-30 h-[71vh] 2xl:h-[80vh]">
                 <div className="centralizador-col-center justify-start ">
