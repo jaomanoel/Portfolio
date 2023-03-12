@@ -11,44 +11,47 @@ import Windows from "../../../../assets/icons/header/windows.svg";
 
 const Header = () => {
     return (
-        <div className="bg-bg-dark-03 w-full flex px-16 justify-between py-13 text-xs lg:text-sm text-text-primary">
-            <div className="flex items-center gap-16">
-                <a href="#">
+        <div className="bg-bg-dark-03 w-full flex px-16 justify-between text-xs lg:text-sm text-text-primary">
+            <div className="flex items-center gap-8">
+                <span>
                     <img className="w-24 h-24" src={Vscode} alt="vscode" />
-                </a>
-                <a className="hidden lg:block" href="#">
+                </span>
+                <span className="hidden lg:block cursor-default hover:text-white hover:bg-bg-dark-01 rounded-lg py-2 px-8">
                     File
-                </a>
-                <a className="hidden lg:block" href="#">
+                </span>
+                <span className="hidden lg:block cursor-default hover:text-white hover:bg-bg-dark-01 rounded-lg py-2 px-8">
                     Edit
-                </a>
-                <a className="hidden lg:block" href="#">
+                </span>
+                <span className="hidden lg:block cursor-default hover:text-white hover:bg-bg-dark-01 rounded-lg py-2 px-8">
                     Selection
-                </a>
-                <a className="hidden lg:block" href="#">
+                </span>
+                <span className="hidden lg:block cursor-default hover:text-white hover:bg-bg-dark-01 rounded-lg py-2 px-8">
                     View
-                </a>
-                <a className="hidden lg:block" href="#">
+                </span>
+                <span className="hidden lg:block cursor-default hover:text-white hover:bg-bg-dark-01 rounded-lg py-2 px-8">
                     Go
-                </a>
-                <a className="hidden lg:block" href="#">
+                </span>
+                <span className="hidden lg:block cursor-default hover:text-white hover:bg-bg-dark-01 rounded-lg py-2 px-8">
                     Run
-                </a>
-                <a className="hidden lg:block" href="#">
+                </span>
+                <span className="hidden lg:block cursor-default hover:text-white hover:bg-bg-dark-01 rounded-lg py-2 px-8">
                     Terminal
-                </a>
-                <a className="hidden lg:block" href="#">
+                </span>
+                <span className="hidden lg:block cursor-default hover:text-white hover:bg-bg-dark-01 rounded-lg py-2 px-8">
                     Help
-                </a>
+                </span>
             </div>
 
             <div className="flex items-center">
                 <p>myportfolio - Visual Studio Code</p>
             </div>
 
-            <div className="flex items-center gap-24">
+            <div className="flex items-center">
                 <div className="hidden lg:flex items-center gap-10 ">
-                    <a href="#">
+                    <a
+                        href="#"
+                        className="rounded-lg hover:bg-bg-dark-01 p-[1px]"
+                    >
                         <img
                             className="w-24 h-24"
                             src={Wright}
@@ -56,7 +59,10 @@ const Header = () => {
                         />
                     </a>
 
-                    <a href="#">
+                    <a
+                        href="#"
+                        className="rounded-lg hover:bg-bg-dark-01 p-[1px]"
+                    >
                         <img
                             className="w-24 h-24"
                             src={Wbottom}
@@ -64,7 +70,10 @@ const Header = () => {
                         />
                     </a>
 
-                    <a href="#">
+                    <a
+                        href="#"
+                        className="rounded-lg hover:bg-bg-dark-01 p-[1px]"
+                    >
                         <img
                             className="w-24 h-24"
                             src={Wleft}
@@ -72,7 +81,10 @@ const Header = () => {
                         />
                     </a>
 
-                    <a href="#">
+                    <a
+                        href="#"
+                        className="rounded-lg hover:bg-bg-dark-01 p-[1px]"
+                    >
                         <img
                             className="w-24 h-24"
                             src={Windows}
@@ -81,12 +93,18 @@ const Header = () => {
                     </a>
                 </div>
 
-                <div className="flex items-center gap-8 md:gap-24">
-                    <a href="#">
+                <div className="flex items-center">
+                    <a
+                        href="#"
+                        className="flex justify-center items-center w-40 h-40 hover:bg-bg-dark-01"
+                    >
                         <img className="w-24 h-24" src={Minus} alt="minus" />
                     </a>
 
-                    <a href="#">
+                    <a
+                        href="#"
+                        className="justify-center hidden lg:flex items-center w-40 h-40 hover:bg-bg-dark-01"
+                    >
                         <img
                             className="hidden lg:block"
                             src={Resize}
@@ -94,7 +112,10 @@ const Header = () => {
                         />
                     </a>
 
-                    <a href="#">
+                    <a
+                        href="#"
+                        className="flex justify-center items-center w-40 h-40 hover:bg-red-700"
+                    >
                         <img className="w-24 h-24" src={Close} alt="close" />
                     </a>
                 </div>
