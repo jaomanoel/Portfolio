@@ -8,17 +8,19 @@ const Contact = () => {
             <head>
                 <title>Joao Manoel - Contato</title>
             </head>
-            <div className="container-view h-full py-30 overflow-x-hidden bg-bg">
-                <div className="centralizador-col-center flex-row gap-32 md:centralizador-row-between">
+            <div className="container-view h-full py-30 overflow-x-hidden w-[100%] bg-bg">
+                <div className="centralizador-col-center md:flex-wrap md:flex-row gap-32 md:centralizador-row-between">
                     <div className="w-full md:hidden text-left">
                         <TextField Text={"DESENVOLVEDOR"} />
                     </div>
 
-                    <div className="w-full hidden h-full -rotate-90 md:block text-left">
-                        <TextField Text={"DESENVOLVEDOR BACK-END"} />
+                    <div className="w-[58%] hidden md:flex">
+                        <div className="text-left w-full">
+                            <TextField Text={"DESENVOLVEDOR BACK-END"} />
+                        </div>
                     </div>
 
-                    <div className="flex flex-col w-full items-center justify-center gap-16">
+                    <div className="flex flex-col max-w-[400px] w-2/4 items-center justify-center gap-16">
                         <h1 className="text-white text-4xl">Contato</h1>
                         <form className="flex items-center w-full flex-col gap-12">
                             <input
@@ -49,7 +51,7 @@ const Contact = () => {
                             <div className="flex gap-20">
                                 <input
                                     type="Submit"
-                                    value="Contratar"
+                                    value="Enviar"
                                     className="w-2/4 cursor-pointer h-48 px-16 py-8 bg-bg-dark-03 text-2xl rounded-lg text-white"
                                 />
 
