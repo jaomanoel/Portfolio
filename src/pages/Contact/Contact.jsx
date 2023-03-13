@@ -8,7 +8,7 @@ const Contact = () => {
             <head>
                 <title>Joao Manoel - Contato</title>
             </head>
-            <div className="container-view h-full py-30 overflow-x-hidden w-[100%] bg-bg">
+            <div className="container-view h-full py-10 overflow-x-hidden w-[100%] bg-bg">
                 <div className="centralizador-col-center md:flex-wrap md:flex-row gap-32 md:centralizador-row-between">
                     <div className="w-full md:hidden text-left">
                         <TextField Text={"DESENVOLVEDOR"} />

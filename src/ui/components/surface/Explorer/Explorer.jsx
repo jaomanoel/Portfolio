@@ -35,7 +35,7 @@ const Explorer = ({ state }) => {
 
     return (
         <div
-            className={`flex px-20 py-24 flex-col w-[340px] h-[88vh] 2xl:h-[92vh] gap-16 bg-bg-explorer ${
+            className={`flex px-20 py-24 flex-col w-[340px] h-[90vh] 2xl:h-[93vh] gap-16 bg-bg-explorer ${
                 state ? "hidden" : "block"
             }`}
         >
