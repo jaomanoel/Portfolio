@@ -56,6 +56,7 @@ html {
 .container-view::-webkit-scrollbar,
 .explorer::-webkit-scrollbar {
     visibility: hidden;
+    display: none;
 }
 
 @media screen and (min-height: 960px) {

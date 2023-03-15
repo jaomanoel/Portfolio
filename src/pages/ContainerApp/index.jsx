@@ -35,7 +35,7 @@ function ContainerApp() {
             <div className="flex flex-col justify-between h-[100vh] bg-bg">
                 <Header />
                 <div className="flex h-full">
-                    <div className="w-74 hidden tablet:block">
+                    <div className="w-60 hidden tablet:block">
                         <TabBar func={explorer.toggleExplorer} />
                     </div>
 
