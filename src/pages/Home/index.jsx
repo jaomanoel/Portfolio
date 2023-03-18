@@ -3,6 +3,9 @@ import React from "react";
 import SocialMedia from "../../ui/components/navigation/SocialMedia/SocialMedia";
 import TextField from "../../ui/components/surface/TextField/TextField";
 
+import ImgMobile from "../../assets/images/home/home-mobile.jpg";
+import ImgDesktop from "../../assets/images/home/home-desktop.jpg";
+
 function Home() {
     return (
         <>
@@ -14,11 +17,19 @@ function Home() {
                     <div className="centralizador-col-center md:flex-row-reverse md:centralizador-row-between justify-end md:justify-between">
                         <div className="content-img-home md:w-[540px] md:h-[340px] 2xl:w-[633px] 2xl:h-[422px]">
                             <div className="md:hidden w-full h-full absolute bg-gradient-to-b from-transparent to-black"></div>
-                            <img
-                                className="w-full h-full md:w-[540px] md:h-[340px] 2xl:w-[633px] 2xl:h-[422px]"
-                                src="https://images.unsplash.com/photo-1549692520-acc6669e2f0c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
-                                alt=""
-                            />
+                            <picture>
+                                <source
+                                    className="w-full h-full md:w-[540px] md:h-[340px] 2xl:w-[633px] 2xl:h-[422px]"
+                                    media="(min-width: 768px)"
+                                    srcset={ImgDesktop}
+                                    type="image/jpg"
+                                />
+                                <img
+                                    className="w-full h-full md:w-[540px] md:h-[340px] 2xl:w-[633px] 2xl:h-[422px]"
+                                    src={ImgMobile}
+                                    alt=""
+                                />
+                            </picture>
                             <div className="hidden md:block">
                                 <SocialMedia />
                             </div>
