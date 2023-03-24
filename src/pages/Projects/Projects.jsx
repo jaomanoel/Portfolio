@@ -1,6 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
 
-import ReactIcon from "../../assets/icons/files/react.svg";
 import { useProjects } from "../../data/hooks/useProjects";
 
 import TextField from "../../ui/components/surface/TextField/TextField";
@@ -62,7 +61,20 @@ const Projects = () => {
                                             )}
                                         </div>
                                     </div>
-                                    <div className="w-[32rem] md:w-[29.6rem] 2xl:w-[35.3rem] h-[15rem] md:h-[15rem] 2xl:h-[16.6rem] bg-[#575757]"></div>
+
+                                    <picture>
+                                        <source
+                                            className="w-[32rem] md:w-[29.6rem] 2xl:w-[35.3rem] h-[15rem] md:h-[15rem] 2xl:h-[16.6rem]"
+                                            media="(min-width: 768px)"
+                                            srcset={project.imgDesktop}
+                                            type="image/png"
+                                        />
+                                        <img
+                                            className="w-[32rem] md:w-[29.6rem] 2xl:w-[35.3rem] h-[15rem] md:h-[15rem] 2xl:h-[16.6rem]"
+                                            src={project.imgMobile}
+                                            alt={project.name}
+                                        />
+                                    </picture>
                                 </div>
 
                                 <p className="pt-4 text-sm opacity-80 md:text-base font-saira text-white">
