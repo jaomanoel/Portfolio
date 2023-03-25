@@ -39,7 +39,7 @@ const Explorer = ({ state }) => {
                 state ? "hidden" : "block"
             }`}
         >
-            <div className="flex flex-col h-[80vh] 2xl:h-[93vh] gap-16">
+            <div className="flex flex-col h-[80vh] 2xl:h-[85vh] gap-16">
                 <div className="flex  items-center gap-24">
                     <p className="text-[1rem] text-white">
                         EXPLORER: MYPORTFOLIO

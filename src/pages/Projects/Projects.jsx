@@ -44,8 +44,7 @@ const Projects = () => {
                                 <div className="w-full border-2 p-16 md:p-30 md:pt-12 border-solid border-bg-dark-03 rounded-lg">
                                     <div className="flex items-center pb-[5px] justify-between">
                                         <h3 className="text-base md:text-2xl text-neutral">
-                                            //{" "}
-                                            {project.name + " " + (index + 1)}
+                                            // {project.name}
                                         </h3>
 
                                         <div className="flex items-center gap-4">
@@ -62,15 +61,14 @@ const Projects = () => {
                                         </div>
                                     </div>
 
-                                    <picture>
+                                    <picture className="w-full flex items-center justify-center">
                                         <source
-                                            className="w-[32rem] md:w-[29.6rem] 2xl:w-[35.3rem] h-[15rem] md:h-[15rem] 2xl:h-[16.6rem]"
                                             media="(min-width: 768px)"
                                             srcset={project.imgDesktop}
                                             type="image/png"
                                         />
                                         <img
-                                            className="w-[32rem] md:w-[29.6rem] 2xl:w-[35.3rem] h-[15rem] md:h-[15rem] 2xl:h-[16.6rem]"
+                                            className="w-[15rem] md:w-[29.6rem] 2xl:w-[35.3rem] h-[15rem] md:h-[15rem] 2xl:h-[16.6rem]"
                                             src={project.imgMobile}
                                             alt={project.name}
                                         />
@@ -86,6 +84,7 @@ const Projects = () => {
                                         className="h-38 w-2/4 hover:bg-blue transition-all bg-bg-dark-03 text-white flex items-center justify-center
                                     text-sm md:text-base rounded-lg"
                                         href={project.link_site}
+                                        target="_blank"
                                     >
                                         Ver Site
                                     </a>
@@ -94,6 +93,7 @@ const Projects = () => {
                                         className="h-38 w-2/4 hover:bg-blue transition-all bg-bg-dark-03 text-white flex items-center justify-center
                                     text-sm md:text-base rounded-lg"
                                         href={project.link_git}
+                                        target="_blank"
                                     >
                                         Ver Codigo
                                     </a>

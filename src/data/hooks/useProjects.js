@@ -18,7 +18,7 @@ import blogrDesktop from "../../assets/images/projects/blogr-desktop.png";
 
 // Mockups mobile
 import androidMobile from "../../assets/images/projects/android-mobile.png";
-import googleMobile from "../../assets/images/projects/google-desktop.png";
+import googleMobile from "../../assets/images/projects/google-mobile.png";
 import loopstudiosMobile from "../../assets/images/projects/loopstudios-mobile.png";
 import travelMobile from "../../assets/images/projects/travel-mobile.png";
 import dsdeliverMobile from "../../assets/images/projects/dsdeliver-mobile.png";
@@ -32,7 +32,7 @@ export function useProjects() {
             imgMobile: blogrMobile,
             desc: "Consiste em um projeto do Frontend Mentor, que se trata de uma landing page sobre múltiplas publicações em diferentes plataformas, como mobile, desktop e laptop.",
             link_git: "https://github.com/jaomanoel/landing-page-blogr",
-            link_site: "#",
+            link_site: "https://jaomanoel.github.io/landing-page-blogr/",
             icons: [React, typeScript],
         },
         {
