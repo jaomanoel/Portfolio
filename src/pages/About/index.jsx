@@ -1,7 +1,7 @@
 import React from "react";
 
 import SocialMedia from "../../ui/components/navigation/SocialMedia/SocialMedia";
-import TextField from "../../ui/components/surface/TextField/TextField";
+import textfield from "../../assets/images/about/textfield.svg";
 
 function About() {
     return (
@@ -9,8 +9,8 @@ function About() {
             <head>
                 <title>Joao Manoel - Sobre</title>
             </head>
-            <div className="container-view bg-bg mt-30 pl-16 h-[71vh] 2xl:h-[80vh]">
-                <div className="centralizador-col-between md:items-center m-0 md:centralizador-row-between md:flex-row h-full">
+            <div className="container-view bg-bg mt-30 pl-16 h-[77vh] 2xl:h-[80vh]">
+                <div className="centralizador-col-between md:items-center m-0 md:centralizador-row-between md:flex-row">
                     <div className="w-2/4 flex h-full flex-col gap-30">
                         <div className="flex flex-col gap-16 md:flex-row md:justify-between w-full">
                             <h1 className="font-bold text-3xl text-white">
@@ -19,7 +19,7 @@ function About() {
                             <SocialMedia />
                         </div>
 
-                        <div className="flex items-center w-[90vw] md:w-600 h-full gap-12 md:gap-24">
+                        <div className="flex items-center w-[90vw] md:w-600 h-fit gap-12 md:gap-24">
                             <div className="flex flex-col h-full justify-between">
                                 <span className="font-bold text-5xl text-neutral">
                                     /*
@@ -29,7 +29,7 @@ function About() {
                                 </span>
                             </div>
 
-                            <div className="flex flex-col w-full items-center gap-12">
+                            <div className="flex flex-col w-full py-60 items-center gap-12">
                                 <p className="text-neutral md:text-xl w-full text-base">
                                     Tenho 16 anos atualmente, estou no segundo
                                     ano do novo Ensino Médio e sou um entusiasta
@@ -62,12 +62,11 @@ function About() {
                         </div>
                     </div>
 
-                    <div className="hidden w-2/4 md:flex items-end justify-end 2xl:justify-center h-full 2xl:-rotate-90 ">
-                        <TextField
-                            props={
-                                "h-full flex items-end -rotate-90 2xl:rotate-0 2xl:-translate-x-[55px]"
-                            }
-                            Text={"Desenvolvedor front-end"}
+                    <div className="hidden md:flex items-baseline justify-end h-full ">
+                        <img
+                            className="w-200 md:h-600 2xl:h-[75rem]"
+                            src={textfield}
+                            alt="textfield"
                         />
                     </div>
                 </div>

@@ -38,7 +38,7 @@ const NavBar = ({ getNav, setNav }) => {
                             }`}
                         >
                             <img
-                                className="w-24 h-24 md:w-32 md:h-32"
+                                className="w-16 h-16 md:w-32 md:h-32"
                                 src={item.icon}
                                 alt={item.name}
                             />
