@@ -42,7 +42,7 @@ const NavBar = ({ getNav, setNav }) => {
                                 src={item.icon}
                                 alt={item.name}
                             />
-                            <p className="text-sm md:text-base text-white leading-8">
+                            <p className="text-xs md:text-base text-white leading-8">
                                 {item.name}
                             </p>
                         </Link>
