@@ -15,6 +15,7 @@ import loopstudiosDesktop from "../../assets/images/projects/loopstudios-desktop
 import travelDesktop from "../../assets/images/projects/travel-desktop.png";
 import dsdeliverDesktop from "../../assets/images/projects/dsdeliver-desktop.png";
 import blogrDesktop from "../../assets/images/projects/blogr-desktop.png";
+import easybankDesktop from "../../assets/images/projects/easybank-desktop.png";
 
 // Mockups mobile
 import androidMobile from "../../assets/images/projects/android-mobile.png";
@@ -23,6 +24,7 @@ import loopstudiosMobile from "../../assets/images/projects/loopstudios-mobile.p
 import travelMobile from "../../assets/images/projects/travel-mobile.png";
 import dsdeliverMobile from "../../assets/images/projects/dsdeliver-mobile.png";
 import blogrMobile from "../../assets/images/projects/blogr-mobile.png";
+import easybankMobile from "../../assets/images/projects/easybank-mobile.png";
 
 export function useProjects() {
     const [projects, setProjects] = useState([
@@ -30,9 +32,18 @@ export function useProjects() {
             name: "Blogr",
             imgDesktop: blogrDesktop,
             imgMobile: blogrMobile,
-            desc: "Consiste em um projeto do Frontend Mentor, que se trata de uma landing page sobre múltiplas publicações em diferentes plataformas, como mobile, desktop e laptop.",
+            desc: "Consiste em um projeto do Frontend Mentor, que se trata-se de uma landing page sobre múltiplas publicações em diferentes plataformas, como mobile, desktop e laptop.",
             link_git: "https://github.com/jaomanoel/landing-page-blogr",
             link_site: "https://jaomanoel.github.io/landing-page-blogr/",
+            icons: [React, typeScript],
+        },
+        {
+            name: "Easybank",
+            imgDesktop: easybankDesktop,
+            imgMobile: easybankMobile,
+            desc: "É um um projeto do Frontend Mentor, que se trata-se de uma landing page sobre um banco digital. Foi utilizado o framework Next.js para realizar o site junto com TailwindCSS.",
+            link_git: "https://github.com/jaomanoel/easybank",
+            link_site: "https://easybank-7asiv1w20-noel6666.vercel.app/",
             icons: [React, typeScript],
         },
         {
@@ -57,7 +68,7 @@ export function useProjects() {
             name: "Travel",
             imgDesktop: travelDesktop,
             imgMobile: travelMobile,
-            desc: "Trata-se de um projeto que simula um template de um site de viagens. Foi utilizado o React para a estruturação do site, e o projeto faz parte do W3.CSS.",
+            desc: "Trata-se de um projeto que simula um template de um site de viagens. Foi utilizado o React para a estruturação do site, e o projeto faz parte do site W3.CSS.",
             link_git: "https://github.com/jaomanoel/travel-project",
             link_site: "https://jaomanoel.github.io/travel-project/",
             icons: [React, typeScript],
