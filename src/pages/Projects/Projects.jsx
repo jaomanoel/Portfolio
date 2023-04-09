@@ -1,8 +1,7 @@
 import React from "react";
+import { useExplorer } from "../../data/hooks/useExplorer";
 
 import { useProjects } from "../../data/hooks/useProjects";
-
-import TextField from "../../ui/components/surface/TextField/TextField";
 
 const Projects = () => {
     const projects = useProjects();
@@ -12,13 +11,18 @@ const Projects = () => {
             <head>
                 <title>Joao Manoel - Projetos</title>
             </head>
-            <div className="container-view px-16 md:px-0 mt-30 h-[77vh] 2xl:h-[80vh]">
-                <div className="centralizador-col-center relative justify-start ">
+            <div
+                className={`container-view px-16 md:px-0 mt-30 h-[77vh] 2xl:h-[80vh] bg-local bg-center bg-no-repeat bg-[url('../.././assets/images/projects/textfield.svg')]`}
+            >
+                <div className="centralizador-col-center relative justify-start">
+                    {/*
+                    
                     <div className="absolute hidden md:block top-0 left-0 w-full h-full">
                         <div className="w-[105%] hidden md:block sticky top-[50%] left-[0%] text-center rotate-[28deg] -translate-y-2/4">
                             <TextField Text={"Desenvolvedor Full-Stack"} />
                         </div>
                     </div>
+                    */}
 
                     <div className="flex z-10 flex-col items-start w-full gap-4 md:flex-row md:justify-between">
                         <h2 className="font-bold text-4xl text-white">
