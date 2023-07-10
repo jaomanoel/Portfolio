@@ -82,15 +82,6 @@ export function useProjects() {
             link_site: "https://jaomanoel.github.io/travel-project/",
             icons: [React, typeScript],
         },
-        {
-            name: "Copia do Google",
-            imgDesktop: googleDesktop,
-            imgMobile: googleMobile,
-            desc: "Trata-se de uma simples cópia da homepage do Google. Para a realização do projeto, foram utilizados HTML e CSS puros. O projeto foi inspirado em um canal de ASMR Programming, no qual o autor programava a homepage do Google em um vídeo.",
-            link_git: "https://github.com/jaomanoel/google",
-            link_site: "https://jaomanoel.github.io/google/",
-            icons: [Html, Css],
-        },
     ]);
 
     function getProjects() {
