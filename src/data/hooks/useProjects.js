@@ -10,7 +10,6 @@ import java from "../../assets/icons/files/java.svg";
 
 // Mockups desktops
 import digitalBusinessDesktop from "../../assets/images/projects/digitalbusiness-desktop.png";
-import googleDesktop from "../../assets/images/projects/google-desktop.png";
 import loopstudiosDesktop from "../../assets/images/projects/loopstudios-desktop.png";
 import travelDesktop from "../../assets/images/projects/travel-desktop.png";
 import dsdeliverDesktop from "../../assets/images/projects/dsdeliver-desktop.png";
@@ -19,7 +18,6 @@ import easybankDesktop from "../../assets/images/projects/easybank-desktop.png";
 
 // Mockups mobile
 import digitalBusinessMobile from "../../assets/images/projects/digitalbusiness-mobile.png";
-import googleMobile from "../../assets/images/projects/google-mobile.png";
 import loopstudiosMobile from "../../assets/images/projects/loopstudios-mobile.png";
 import travelMobile from "../../assets/images/projects/travel-mobile.png";
 import dsdeliverMobile from "../../assets/images/projects/dsdeliver-mobile.png";
