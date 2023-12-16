@@ -29,7 +29,7 @@ export function useProjects() {
             imgDesktop: digitalBusinessDesktop,
             imgMobile: digitalBusinessMobile,
             desc: "Landing page utilizada para a captação de leads, com o objetivo de levar seus negócios físicos para o digital através de um site ou aplicativo móvel. Foi utilizado o framework Next.js junto com TailwindCSS.",
-            link_git: "https://github.com/jaomanoel/Digital-Business",
+            link_git: "",
             link_site: "https://digital-business.website/",
             icons: [React, typeScript],
         },
