@@ -3,7 +3,7 @@ import React from "react";
 import SocialMedia from "../../ui/components/navigation/SocialMedia/SocialMedia";
 import TextField from "../../ui/components/surface/TextField/TextField";
 
-import bgHome from "../../assets/images/home/home-desktop.png";
+import bgHome from "../../assets/images/home/joao.svg";
 
 function Home() {
     return (
@@ -11,34 +11,14 @@ function Home() {
             <head>
                 <title>Joao Manoel - Home</title>
             </head>
-            <div className="container-view bg-bg mt-40 pb-30 md:pb-0 md:mt-30 h-full 2xl:h-[80vh] relative mx-12 md:mx-0">
-                <div className="centralizador-col-center justify-end">
-                    <div className="centralizador-col-center md:flex-row-reverse md:centralizador-row-between justify-end md:justify-between">
-                        <div className="content-img-home bg-transparent md:-mt-10 2xl:-mt-20 md:w-[620px] md:h-[415px] 2xl:w-[633px] 2xl:h-[422px]">
-                            <div className="md:hidden w-full h-full absolute bg-gradient-to-b from-transparent to-black"></div>
-                            {/*
-                                <picture>
-                                    <source
-                                        className="w-full h-full md:w-[540px] md:h-[340px] 2xl:w-[633px] 2xl:h-[422px]"
-                                        media="(min-width: 768px)"
-                                        srcset={ImgDesktop}
-                                        type="image/jpg"
-                                    />
-                                    <img
-                                        className="w-full h-full md:w-[540px] md:h-[340px] 2xl:w-[633px] 2xl:h-[422px]"
-                                        src={ImgMobile}
-                                        alt=""
-                                    />
-                                </picture>
-                            */}
-
-                            <img
-                                className="md:w-[540px] md:h-[340px] 2xl:w-[700px] 2xl:h-[500px]"
-                                src={bgHome}
-                                alt="Joao Manoel"
-                            />
-                        </div>
-
+            <div className="container-view bg-bg mt-40 flex-row-reverse overflow-hidden md:mt-0 pb-30 md:pb-0 h-full relative mx-12 mr-0 md:mx-0">
+                <img
+                    className="absolute right-0 md:top-0 w-fit h-[63%] bottom-0 md:w-[667px] md:h-[1111px] lg:w-[625px] lg:h-[845px] 2xl:w-[783px] 2xl:h-[1025px]"
+                    src={bgHome}
+                    alt="Joao Manoel"
+                />
+                <div className="centralizador-col-center justify-end xl:pt-74">
+                    <div className="centralizador-col-center md:flex-row md:centralizador-row-between justify-start md:justify-between">
                         <div className="z-10 flex flex-col gap-20">
                             <div>
                                 <p className="text-xl text-white font-normal">
@@ -53,16 +33,6 @@ function Home() {
                             </div>
 
                             <div className="flex flex-col gap-12">
-                                <a
-                                    href="https://wa.me/message/3RBRQY4FYXPKB1"
-                                    target={"_blank"}
-                                    className="flex items-center justify-center w-full h-48 bg-bg-dark-02 rounded-lg hover:bg-blue"
-                                >
-                                    <p className="text-white text-xl">
-                                        Contratar
-                                    </p>
-                                </a>
-                                
                                 <div>
                                     <SocialMedia />
                                 </div>
