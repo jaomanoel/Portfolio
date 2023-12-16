@@ -1,6 +1,4 @@
 import React from "react";
-import { useExplorer } from "../../data/hooks/useExplorer";
-
 import { useProjects } from "../../data/hooks/useProjects";
 
 const Projects = () => {
@@ -15,28 +13,10 @@ const Projects = () => {
                 className={`container-view px-16 md:px-0 mt-30 h-[77vh] 2xl:h-[80vh] bg-local bg-center bg-no-repeat bg-[url('../.././assets/images/projects/textfield.svg')]`}
             >
                 <div className="centralizador-col-center relative justify-start">
-                    {/*
-                    
-                    <div className="absolute hidden md:block top-0 left-0 w-full h-full">
-                        <div className="w-[105%] hidden md:block sticky top-[50%] left-[0%] text-center rotate-[28deg] -translate-y-2/4">
-                            <TextField Text={"Desenvolvedor Full-Stack"} />
-                        </div>
-                    </div>
-                    */}
-
                     <div className="flex z-10 flex-col items-start w-full gap-4 md:flex-row md:justify-between">
                         <h2 className="font-bold text-4xl text-white">
                             Projetos
                         </h2>
-
-                        <a
-                            className="h-48 bg-bg-dark-03 px-32 transition-all text-white flex items-center justify-center
-                            text-xl rounded-lg md:px-40 hover:bg-blue"
-                            href="https://wa.me/message/3RBRQY4FYXPKB1"
-                            target={"_blank"}
-                        >
-                            Contratar
-                        </a>
                     </div>
 
                     <div className="flex z-10 flex-wrap gap-20 justify-start md:justify-between">
@@ -84,23 +64,35 @@ const Projects = () => {
                                 </p>
 
                                 <div className="flex items-center justify-center pt-12 gap-20">
-                                    <a
-                                        className="h-38 w-2/4 hover:bg-blue transition-all bg-bg-dark-03 text-white flex items-center justify-center
-                                    text-sm md:text-base rounded-lg"
-                                        href={project.link_site}
-                                        target="_blank"
-                                    >
-                                        Ver Site
-                                    </a>
+                                    {project.link_site && (
+                                        <a
+                                            className={`h-38 ${
+                                                project.link_git
+                                                    ? "w-2/4"
+                                                    : "w-full"
+                                            } hover:bg-blue transition-all bg-bg-dark-03 text-white flex items-center justify-center
+                                    text-sm md:text-base rounded-lg`}
+                                            href={project.link_site}
+                                            target="_blank"
+                                        >
+                                            Ver Site
+                                        </a>
+                                    )}
 
-                                    <a
-                                        className="h-38 w-2/4 hover:bg-blue transition-all bg-bg-dark-03 text-white flex items-center justify-center
-                                    text-sm md:text-base rounded-lg"
-                                        href={project.link_git}
-                                        target="_blank"
-                                    >
-                                        Ver Codigo
-                                    </a>
+                                    {project.link_git && (
+                                        <a
+                                            className={`h-38 ${
+                                                project.link_site
+                                                    ? "w-2/4"
+                                                    : "w-full"
+                                            } hover:bg-blue transition-all bg-bg-dark-03 text-white flex items-center justify-center
+                                    text-sm md:text-base rounded-lg`}
+                                            href={project.link_git}
+                                            target="_blank"
+                                        >
+                                            Ver Codigo
+                                        </a>
+                                    )}
                                 </div>
                             </div>
                         ))}
