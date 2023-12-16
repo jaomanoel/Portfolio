@@ -1,16 +1,13 @@
 import { useState } from "react";
 
 // Skills
-import Html from "../../assets/icons/files/html.svg";
 import Js from "../../assets/icons/files/js.svg";
 import typeScript from "../../assets/icons/files/type-script.svg";
 import React from "../../assets/icons/files/react.svg";
-import Css from "../../assets/icons/files/css.svg";
 import java from "../../assets/icons/files/java.svg";
 
 // Mockups desktops
-import androidDesktop from "../../assets/images/projects/android-desktop.png";
-import googleDesktop from "../../assets/images/projects/google-desktop.png";
+import digitalBusinessDesktop from "../../assets/images/projects/digitalbusiness-desktop.png";
 import loopstudiosDesktop from "../../assets/images/projects/loopstudios-desktop.png";
 import travelDesktop from "../../assets/images/projects/travel-desktop.png";
 import dsdeliverDesktop from "../../assets/images/projects/dsdeliver-desktop.png";
@@ -18,8 +15,7 @@ import blogrDesktop from "../../assets/images/projects/blogr-desktop.png";
 import easybankDesktop from "../../assets/images/projects/easybank-desktop.png";
 
 // Mockups mobile
-import androidMobile from "../../assets/images/projects/android-mobile.png";
-import googleMobile from "../../assets/images/projects/google-mobile.png";
+import digitalBusinessMobile from "../../assets/images/projects/digitalbusiness-mobile.png";
 import loopstudiosMobile from "../../assets/images/projects/loopstudios-mobile.png";
 import travelMobile from "../../assets/images/projects/travel-mobile.png";
 import dsdeliverMobile from "../../assets/images/projects/dsdeliver-mobile.png";
@@ -28,6 +24,15 @@ import easybankMobile from "../../assets/images/projects/easybank-mobile.png";
 
 export function useProjects() {
     const [projects, setProjects] = useState([
+        {
+            name: "Digital Business",
+            imgDesktop: digitalBusinessDesktop,
+            imgMobile: digitalBusinessMobile,
+            desc: "Landing page utilizada para a captação de leads, com o objetivo de levar seus negócios físicos para o digital através de um site ou aplicativo móvel. Foi utilizado o framework Next.js junto com TailwindCSS.",
+            link_git: "https://github.com/jaomanoel/Digital-Business",
+            link_site: "https://digital-business.website/",
+            icons: [React, typeScript],
+        },
         {
             name: "Blogr",
             imgDesktop: blogrDesktop,
@@ -72,24 +77,6 @@ export function useProjects() {
             link_git: "https://github.com/jaomanoel/travel-project",
             link_site: "https://jaomanoel.github.io/travel-project/",
             icons: [React, typeScript],
-        },
-        {
-            name: "Copia do Google",
-            imgDesktop: googleDesktop,
-            imgMobile: googleMobile,
-            desc: "Trata-se de uma simples cópia da homepage do Google. Para a realização do projeto, foram utilizados HTML e CSS puros. O projeto foi inspirado em um canal de ASMR Programming, no qual o autor programava a homepage do Google em um vídeo.",
-            link_git: "https://github.com/jaomanoel/google",
-            link_site: "https://jaomanoel.github.io/google/",
-            icons: [Html, Css],
-        },
-        {
-            name: "Android",
-            imgDesktop: androidDesktop,
-            imgMobile: androidMobile,
-            desc: "Este foi um dos meus primeiros projetos quando eu estava estudando pelo Curso em Vídeo com o professor Guanabara. O projeto é um site que conta a história do mascote do Android.",
-            link_git: "https://github.com/jaomanoel/projeto-android",
-            link_site: "https://jaomanoel.github.io/projeto-android/",
-            icons: [Html, Css],
         },
     ]);
 
