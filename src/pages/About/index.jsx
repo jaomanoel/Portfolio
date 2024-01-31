@@ -31,32 +31,38 @@ function About() {
 
                             <div className="flex flex-col w-full py-60 items-center gap-12">
                                 <p className="text-neutral md:text-xl w-full text-base">
-                                    Tenho 16 anos atualmente, estou no segundo
-                                    ano do novo Ensino Médio e sou um entusiasta
-                                    da área de Tecnologia da Informação (TI).
-                                    Desde criança, sempre tive interesse em
-                                    entender como os sistemas funcionam e como a
-                                    tecnologia pode ajudar as pessoas.
+                                    Olá, eu sou João Manoel, um jovem de 17 anos
+                                    apaixonado por Tecnologia da Informação (TI)
+                                    e em busca constante de conhecimento para
+                                    aprimorar minhas habilidades. Atualmente,
+                                    estou cursando o terceiro ano do novo Ensino
+                                    Médio.
                                 </p>
 
                                 <p className="text-neutral md:text-xl w-full text-base">
-                                    Há cerca de 1 ano e 6 meses, comecei meus
-                                    estudos em programação e desenvolvimento de
-                                    software. Atualmente, atuo como freelancer,
-                                    desenvolvendo pequenos projetos e ampliando
-                                    meus conhecimentos em linguagens de
-                                    programação como Java, TypeScript e
-                                    JavaScript.
+                                    Há aproximadamente dois anos, iniciei minha
+                                    jornada no mundo da programação e
+                                    desenvolvimento de software, um caminho que
+                                    tem se revelado incrivelmente empolgante.
+                                    Neste momento, faço parte da equipe de
+                                    desenvolvedores da Digital Business, onde
+                                    tenho a oportunidade de trabalhar em
+                                    projetos desafiadores e aprimorar minhas
+                                    habilidades em linguagens como Java,
+                                    TypeScript e JavaScript. Essa experiência
+                                    tem sido fundamental para o meu crescimento
+                                    profissional, proporcionando um ambiente
+                                    dinâmico e repleto de aprendizado prático.
                                 </p>
 
                                 <p className="text-neutral md:text-xl w-full text-base">
-                                    Tenho muita vontade de aprender mais e me
-                                    manter atualizado com as novas tendências e
-                                    tecnologias do mercado. Acredito que o
-                                    aprendizado contínuo é fundamental para o
-                                    sucesso na área de TI e estou sempre
-                                    buscando novas oportunidades de aprendizado
-                                    e desafios.
+                                    Acredito firmemente na importância do
+                                    aprendizado contínuo na área de TI. Busco
+                                    incessantemente por novas oportunidades que
+                                    me permitam expandir meus horizontes, ficar
+                                    atualizado com as últimas tendências e
+                                    abraçar os desafios que impulsionam o meu
+                                    crescimento profissional.
                                 </p>
                             </div>
                         </div>
