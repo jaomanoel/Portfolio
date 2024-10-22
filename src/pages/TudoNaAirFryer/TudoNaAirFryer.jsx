@@ -6,7 +6,7 @@ const TudoNaAirFryer = () => {
             <head>
                 <title>Politicas de Privacidades</title>
             </head>
-            <body style={{ fontSize: "16px", margin: "20px" }}>
+            <div style={{ fontSize: "16px", margin: "20px" }}>
                 <h2>
                     <span style={{ color: "#ffffff" }}>
                         Política Privacidade
@@ -160,7 +160,7 @@ const TudoNaAirFryer = () => {
                         19:53
                     </span>
                 </p>
-            </body>
+            </div>
         </>
     );
 };
