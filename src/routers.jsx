@@ -5,6 +5,7 @@ import About from "./pages/About";
 import ContainerApp from "./pages/ContainerApp";
 import Contact from "./pages/Contact/Contact";
 import Projects from "./pages/Projects/Projects";
+import TudoNaAirFryer from "./pages/TudoNaAirFryer/TudoNaAirFryer";
 
 const routers = createBrowserRouter(
     [
@@ -26,6 +27,10 @@ const routers = createBrowserRouter(
                 {
                     path: "projects",
                     element: <Projects />,
+                },
+                {
+                    path: "tudonaairfryer",
+                    element: <TudoNaAirFryer />,
                 },
             ],
         },
